@@ -1,0 +1,8 @@
+<template>
+<require from="elementy.html"></require>
+<hr>
+<h2 class="text-center">Elementy</h2>
+<p class="text-center"><input type="checkbox", ref="recursive">Zobraziť/skryť ďalší element</p>
+<elementy if.bind="recursive.checked"></elementy>
+<hr>
+</template>

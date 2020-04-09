@@ -1,0 +1,10 @@
+<template>
+<br>
+<h2 class="text-center">Bindings</h2>
+<p class="text-center"><input type=checkbox change.delegate='task.updateMessage()' checked.bind='task.state'>  ${task.message}.</p>
+<p class="text-center">Hodnota parametra je: ${task.state}</p>
+<p class="text-center">
+<input type="text" value.bind="task.stringstate">
+<button class="btn btn-primary" click.delegate="task.updateState()" >Zmeniť</button>
+</p>
+</template>

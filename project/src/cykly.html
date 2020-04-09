@@ -1,0 +1,13 @@
+<template>
+<br>
+<h2 class="text-center">Cykly</h2>
+<p class=text-center>
+<input type="text" value.bind="list.newStudent">
+<button class="btn btn-success" click.delegate="list.addStudent()">Pridať</button>
+</p>
+<ul class="text-center list-group">
+<li class="list-group-item" repeat.for="element of list.students">
+<a>${element}&nbsp</a><button  class="btn btn-danger" click.delegate="list.removeStudent(element)">Odstrániť</button>
+</li>
+</ul>
+</template>
